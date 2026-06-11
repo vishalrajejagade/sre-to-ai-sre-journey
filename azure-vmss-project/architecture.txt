@@ -1,0 +1,7 @@
+User
+  ↓
+Load Balancer
+  ↓
+VM Scale Set (Auto Scaling)
+  ↓
+Instances (NGINX Web Servers)
