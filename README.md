@@ -16,4 +16,4 @@ Topics:
 
 Goal:
 
-Transition from SRE Engineer to AI-SRE Engineer.
+Transition from SRE Engineer to AI-SRE Engineer
