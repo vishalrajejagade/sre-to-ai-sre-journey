@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-net-demo
+  namespace: day33
+  labels:
+    app: nginx-net-demo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx-net-demo
+  template:
+    metadata:
+      labels:
+        app: nginx-net-demo
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:1.27
+          ports:
+            - containerPort: 80
