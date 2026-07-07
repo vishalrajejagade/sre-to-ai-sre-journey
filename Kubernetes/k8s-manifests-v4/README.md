@@ -1,4 +1,4 @@
-# Day 33 - Kubernetes Advanced Networking
+# Day 32 - Kubernetes Advanced Networking
 
 ## Topics Covered
 

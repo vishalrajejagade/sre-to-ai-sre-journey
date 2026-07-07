@@ -1,0 +1,23 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-advanced
+  namespace: day33-advanced
+  labels:
+    app: nginx-advanced
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx-advanced
+  template:
+    metadata:
+      labels:
+        app: nginx-advanced
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:1.27
+          ports:
+            - containerPort: 80

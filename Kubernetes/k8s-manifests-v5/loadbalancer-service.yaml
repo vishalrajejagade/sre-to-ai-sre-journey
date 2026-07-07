@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-loadbalancer
+  namespace: day33-advanced
+spec:
+  type: LoadBalancer
+  selector:
+    app: nginx-advanced
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80

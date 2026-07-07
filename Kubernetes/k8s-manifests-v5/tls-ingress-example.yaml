@@ -1,0 +1,22 @@
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nginx-tls-ingress
+  namespace: day33-advanced
+spec:
+  tls:
+    - hosts:
+        - app.example.com
+      secretName: nginx-tls-secret
+  rules:
+    - host: app.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: nginx-clusterip
+                port:
+                  number: 80
