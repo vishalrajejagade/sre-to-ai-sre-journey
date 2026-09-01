@@ -1,0 +1,19 @@
+---
+- name: Service Health Validation
+  hosts: linux
+
+  tasks:
+
+    - name: Gather service facts
+      service_facts:
+
+    - name: Verify config file
+      stat:
+        path: /etc/nginx/nginx.conf
+      register: nginx_file
+
+    - name: Display status
+      debug:
+        msg:
+          - "Nginx State: {{ ansible_facts.services['nginx.service'].state }}"
+          - "Config Exists: {{ nginx_file.stat.exists }}"

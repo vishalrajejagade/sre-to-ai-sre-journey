@@ -1,0 +1,16 @@
+---
+- name: Safe Linux Patching
+  hosts: linux
+  become: yes
+  serial: 1
+  max_fail_percentage: 30
+
+  tasks:
+
+    - name: Update cache
+      apt:
+        update_cache: yes
+
+    - name: Upgrade packages
+      apt:
+        upgrade: dist
