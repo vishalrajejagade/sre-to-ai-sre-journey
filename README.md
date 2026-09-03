@@ -4,16 +4,16 @@ This repository documents my learning journey.
 
 Topics:
 
-- Linux
-- Git
-- Networking
-- Python
-- Azure
-- Docker
-- Kubernetes
-- Observability
-- AIOps
+• Linux
+• Git
+• Networking
+• Azure
+• Kubernetes
+• Monitoring
+• SRE
+• Ansible
+• Power Automate
+• Azure Automation
+• AI-SRE
 
-Goal:
-
-Transition from SRE Engineer to AI-SRE Engineer
+Learning through hands-on projects and real operational scenarios.
