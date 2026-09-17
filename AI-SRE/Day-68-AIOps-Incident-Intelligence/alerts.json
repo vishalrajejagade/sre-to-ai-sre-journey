@@ -1,0 +1,37 @@
+[
+  {
+    "timestamp": "10:01",
+    "service": "backend",
+    "severity": "critical",
+    "message": "Backend Down",
+    "dependency": "database"
+  },
+  {
+    "timestamp": "10:02",
+    "service": "nginx",
+    "severity": "high",
+    "message": "502 Bad Gateway",
+    "dependency": "backend"
+  },
+  {
+    "timestamp": "10:03",
+    "service": "api",
+    "severity": "high",
+    "message": "API Timeout",
+    "dependency": "backend"
+  },
+  {
+    "timestamp": "10:04",
+    "service": "frontend",
+    "severity": "medium",
+    "message": "Frontend Error",
+    "dependency": "backend"
+  },
+  {
+    "timestamp": "10:05",
+    "service": "load-balancer",
+    "severity": "medium",
+    "message": "Load Balancer Unhealthy",
+    "dependency": "nginx"
+  }
+]

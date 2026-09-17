@@ -1,0 +1,11 @@
+{
+  "incident_id": "INC-001",
+  "root_cause_candidate": "Backend Down",
+  "confidence": "90%",
+  "symptoms": [
+    "502 Bad Gateway",
+    "API Timeout",
+    "Frontend Error",
+    "Load Balancer Unhealthy"
+  ]
+}

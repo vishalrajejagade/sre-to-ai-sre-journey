@@ -1,0 +1,14 @@
+{
+  "metrics": {
+    "backend_availability": "0%"
+  },
+  "logs": [
+    "connection refused"
+  ],
+  "traces": [
+    "frontend -> api -> backend failure"
+  ],
+  "history": [
+    "similar incident fixed by backend recovery"
+  ]
+}
